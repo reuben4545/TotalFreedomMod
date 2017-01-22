@@ -9,9 +9,9 @@ public enum Rank implements Displayable
     IMPOSTOR("an", "Impostor", Type.PLAYER, "Imp", ChatColor.YELLOW),
     NON_OP("a", "Non-Op", Type.PLAYER, "", ChatColor.GREEN),
     OP("an", "Op", Type.PLAYER, "OP", ChatColor.RED),
-    SUPER_ADMIN("a", "Super Admin", Type.ADMIN, "SA", ChatColor.AQUA),
-    TELNET_ADMIN("a", "Telnet Admin", Type.ADMIN, "STA", ChatColor.DARK_GREEN),
-    SENIOR_ADMIN("a", "Senior Admin", Type.ADMIN, "SrA", ChatColor.GOLD),
+    SAPPHIRE_ADMIN("a", "Sapphire Admin", Type.ADMIN, "SA", ChatColor.AQUA),
+    RUBY_ADMIN("a", "Ruby Admin", Type.ADMIN, "RA", ChatColor.RED),
+    ETERNAL_ADMIN("an", "Eternal Admin", Type.ADMIN, "EA", ChatColor.DARK_AQUA),
     TELNET_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     SENIOR_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter
@@ -87,10 +87,10 @@ public enum Rank implements Displayable
     {
         switch (this)
         {
-            case TELNET_ADMIN:
+            case RUBY_ADMIN:
             case TELNET_CONSOLE:
                 return TELNET_CONSOLE;
-            case SENIOR_ADMIN:
+            case ETERNAL_ADMIN:
             case SENIOR_CONSOLE:
                 return SENIOR_CONSOLE;
             default:
@@ -102,10 +102,10 @@ public enum Rank implements Displayable
     {
         switch (this)
         {
-            case TELNET_ADMIN:
+            case RUBY_ADMIN:
             case TELNET_CONSOLE:
                 return TELNET_ADMIN;
-            case SENIOR_ADMIN:
+            case ETERNAL_ADMIN:
             case SENIOR_CONSOLE:
                 return SENIOR_ADMIN;
             default:
