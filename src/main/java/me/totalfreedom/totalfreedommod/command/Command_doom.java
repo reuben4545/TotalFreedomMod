@@ -33,8 +33,8 @@ public class Command_doom extends FreedomCommand
             return true;
         }
 
-        FUtil.adminAction(sender.getName(), "Casting oblivion over " + player.getName(), true);
-        FUtil.bcastMsg(player.getName() + " will be completely obliviated!", ChatColor.RED);
+        FUtil.adminAction(sender.getName(), "Opening the gates of hell for " + player.getName(), true);
+        FUtil.bcastMsg(player.getName() + " will be completely obliviated!", ChatColor.GOLD);
 
         final String ip = player.getAddress().getAddress().getHostAddress().trim();
 
@@ -42,7 +42,7 @@ public class Command_doom extends FreedomCommand
         Admin admin = getAdmin(player);
         if (admin != null)
         {
-            FUtil.adminAction(sender.getName(), "Removing " + player.getName() + " from the superadmin list", true);
+            FUtil.adminAction(sender.getName(), "Removing " + player.getName() + " from the admin list", true);
             plugin.al.removeAdmin(admin);
         }
 
